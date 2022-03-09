@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Tourney&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: grey;
+  margin: 0;
+}
+
+.circle {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 0.3em;
+}
+
+.red {
+  background-color: #ffadad;
+}
+
+.orange {
+  background-color: #ffd6a5;
+}
+
+.yellow {
+  background-color: #fdffb6;
+}
+
+.green {
+  background-color: #caffbf;
+}
+
+.blue {
+  background-color: #9bf6ff;
+}
+
+.purple {
+  background-color: #a0c4ff;
+}
+
+header {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+header > h1 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Tourney', cursive;
+  font-size: 4.5rem;
+}
+
+.guess {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  max-width: 700px;
+  margin: 1em auto;
+  background-color: white;
+}
+
+.color-selector {
+  display: flex;
+  justify-content: center;
+}
+
+.color-selector > .circle {
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.color-selector > .circle:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.color-selector > .circle:active {
+  transform: translateY(3px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.selected-colors {
+  display: flex;
+  justify-content: center;
+}
+
+.selected-colors > div {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.selected {
+  border: 3px solid tomato;
+  transform: translateY(-2px);
+}
+
+button {
+  font-size: 2rem;
+  background-color: teal;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.guesses {
+  max-width: 700px;
+  margin: 1em auto;
+}
+
+.guess-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  max-width: 700px;
+  margin-top: 1em;
+  background-color: white;
+  animation-duration: 0.8s;
+  animation-name: slidein;
+}
+
+.guess-colors {
+  display: flex;
+  justify-content: center;
+}
+
+.guess-container > p {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

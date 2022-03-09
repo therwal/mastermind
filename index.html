@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastermind</title>
+    <meta name="description" content="Mastermind game" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Mastermind</h1>
+    </header>
+    <div class="outer-continer">
+      <div class="guess">
+        <div class="color-selector">
+          <div class="circle red"></div>
+          <div class="circle orange"></div>
+          <div class="circle yellow"></div>
+          <div class="circle green"></div>
+          <div class="circle blue"></div>
+          <div class="circle purple"></div>
+        </div>
+        <div class="selected-colors">
+          <div id="0" class="circle selected"></div>
+          <div id="1" class="circle"></div>
+          <div id="2" class="circle"></div>
+          <div id="3" class="circle"></div>
+        </div>
+        <button>Guess</button>
+      </div>
+      <div class="guesses"></div>
+    </div>
+  </body>
+</html>
